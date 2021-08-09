@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+.outer-container {
+  width: 100vw;
+  height: 100vh;
+}
+.inner-container {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: bisque;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pad-bank {
+  background-color: rgb(255, 252, 251);
+  flex-wrap: wrap;
+  width: 360px;
+  height: 360px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 15px auto;
+}
+
+#display {
+  position: relative;
+  /* float: initial; */
+  width: 200px;
+  height: 50px;
+  background-color: rgb(255, 189, 126);
+  margin: 200px auto;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drum-pad {
+  border: 2px solid rgb(255, 101, 46);
+  background-color: rgb(255, 118, 68);
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drum-pad:hover {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+.drum-pad.active {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
